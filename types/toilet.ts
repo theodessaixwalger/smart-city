@@ -6,11 +6,13 @@ export interface Toilet {
   description: string;
   fee: string;
   wheelchair: string;
+  access: string;
+  openingHours?: string;
 }
 
 export interface OverpassElement {
   id: number;
-  type: 'node' | 'way' | 'relation'
+  type: 'node' | 'way' | 'relation';
   lat?: number;
   lon?: number;
   center?: { lat: number; lon: number };
